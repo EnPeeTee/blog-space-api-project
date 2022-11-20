@@ -1,0 +1,67 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Layout */
+
+nav {
+    margin: 0;
+    height: 3em;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    
+    color: aliceblue;
+    background-color: lightblue;
+}
+
+nav > h1 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+form {
+    padding: 4em 1em 1em;
+    display: grid;
+    background-color: antiquewhite;
+}
+
+input#post-title, textarea#post-body, button {
+    border: 1px grey solid;
+    border-radius: 5px;
+}
+
+input#post-title, textarea#post-body {
+    margin-bottom: 1em;
+}
+
+textarea#post-body {
+    height: 10em;
+}
+
+button {
+    padding: .75em;
+    font-size: 1rem;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    color: aliceblue;
+    background-color: lightblue;
+
+    cursor: pointer;
+}
+
+#container-posts {
+    padding: 1em;
+}
+
